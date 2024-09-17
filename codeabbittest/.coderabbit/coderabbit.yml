@@ -34,3 +34,4 @@ reviews:
         - Ensure naming conventions for classes, methods, and variables follow PascalCase for public members and camelCase for private members.
         - Check for the usage of LINQ where it would improve code readability and performance.
         - Review code for any possible performance improvements and best practices (e.g., proper resource management with `using` statements).
+        - If using featureflags please see to it that it is applied correclty   
