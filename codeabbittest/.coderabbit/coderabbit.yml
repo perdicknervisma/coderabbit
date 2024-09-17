@@ -35,3 +35,4 @@ reviews:
         - Check for the usage of LINQ where it would improve code readability and performance.
         - Review code for any possible performance improvements and best practices (e.g., proper resource management with `using` statements).
         - If using featureflags please see to it that it is applied correclty   
+        - Ensure that the code is properly formatted and indented.
