@@ -1,0 +1,23 @@
+﻿version: 1
+
+rules:
+  - name: "Comment on Missing Docstrings"
+    trigger: pull_request
+    conditions:
+      - "files_modified include '*.py'"
+    actions:
+      - comment: "Please add docstrings to your functions and classes."
+
+  - name: "Comment on TODOs"
+    trigger: pull_request
+    conditions:
+      - "file_contains 'TODO'"
+    actions:
+      - comment: "Please address TODO comments before merging."
+
+  - name: "Comment on Long Functions"
+    trigger: pull_request
+    conditions:
+      - "function_length > 50"
+    actions:
+      - comment: "This function is quite long. Consider refactoring it into smaller functions for better readability."
