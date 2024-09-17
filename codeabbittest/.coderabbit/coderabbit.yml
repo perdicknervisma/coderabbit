@@ -21,3 +21,16 @@ rules:
       - "function_length > 50"
     actions:
       - comment: "This function is quite long. Consider refactoring it into smaller functions for better readability."
+  
+reviews:
+  path_instructions:
+    - path: "**/*.cs"
+      instructions: |
+        Review the C# code for the following:
+        - Ensure the code adheres to the Microsoft C# coding conventions.
+        - Check for proper usage of async/await when dealing with asynchronous code.
+        - Ensure that exception handling is done appropriately and that exceptions are not being swallowed.
+        - Verify that proper XML documentation comments are included for public methods and classes.
+        - Ensure naming conventions for classes, methods, and variables follow PascalCase for public members and camelCase for private members.
+        - Check for the usage of LINQ where it would improve code readability and performance.
+        - Review code for any possible performance improvements and best practices (e.g., proper resource management with `using` statements).
