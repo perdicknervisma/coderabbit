@@ -25,7 +25,7 @@ rules:
   -  name: "Restrict Review to Specific Users"
      trigger: pull_request
      conditions:
-        - "author in ['perdicknervisma_fake']"
+        - "author in ['perdicknervisma_faker']"
      actions:
         - assign_reviewer:
           reviewers: ["coderabbit"]
