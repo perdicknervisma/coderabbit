@@ -22,6 +22,14 @@ rules:
     actions:
       - comment: "This function is quite long. Consider refactoring it into smaller functions for better readability."
   
+  -  name: "Restrict Review to Specific Users"
+     trigger: pull_request
+     conditions:
+        - "author in ['perdicknervisma_fake']"
+     actions:
+        - assign_reviewer:
+          reviewers: ["coderabbit"]
+
 reviews:
   path_instructions:
     - path: "**/*.cs"
